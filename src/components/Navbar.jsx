@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav className="bg-gray-900 text-white p-4">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="text-2xl font-bold">
-          <Link to="/">MySite</Link>
+        <Link to="/">MySite</Link>
         </div>
 
         {/* Hamburger Menu Icon */}
@@ -38,8 +38,28 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="py-2 md:py-0">
+            <Link to="/forms" onClick={() => setIsOpen(false)}>
+              Forms
+            </Link>
+          </li>
+          <li className="py-2 md:py-0">
+            <Link to="/multiInput" onClick={() => setIsOpen(false)}>
+              MultiInput
+            </Link>
+          </li>
+          <li className="py-2 md:py-0">
+            <Link to="/submit-form" onClick={() => setIsOpen(false)}>
+              SubmitForm
+            </Link>
+          </li>
+          <li className="py-2 md:py-0">
             <Link to="/contact" onClick={() => setIsOpen(false)}>
               Contact
+            </Link>
+          </li>
+          <li className="py-2 md:py-0">
+            <Link to="/register" onClick={() => setIsOpen(false)}>
+              Register
             </Link>
           </li>
         </ul>

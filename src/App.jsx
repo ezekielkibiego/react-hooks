@@ -10,6 +10,8 @@ import Forms from './pages/Forms'
 import MultiInputForm from './pages/MultiInputForm'
 import SubmitForm from './pages/SubmitForm'
 import RegisterForm from './pages/RegisterForm'
+import Users from './pages/Users'
+import Nasa from './pages/Nasa'
 
 function App() {
   return (
@@ -22,8 +24,11 @@ function App() {
         <Route path='/forms' element={<Forms />}/>
         <Route path='/submit-form' element={<SubmitForm />}/>
         <Route path='/multiInput' element={<MultiInputForm />}/>
+        <Route path='/users' element={<Users />}/>
+        <Route path='/nasa' element={<Nasa />}/>
         <Route path='/register' element={<RegisterForm />}/>
         <Route path='*' element={<NotFound />}/>
+
       </Routes>
       <Footer />
     </Router>

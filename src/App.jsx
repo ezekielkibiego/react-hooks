@@ -10,6 +10,16 @@ import Forms from './pages/Forms'
 import MultiInputForm from './pages/MultiInputForm'
 import SubmitForm from './pages/SubmitForm'
 import RegisterForm from './pages/RegisterForm'
+import Users from './pages/Users'
+import Nasa from './pages/Nasa'
+import Github from './pages/GithubRepos'
+import Character from './pages/Character'
+import CharacterDetail from './pages/CharacterDetail'
+import Overview from './pages/dashboard/Overview'
+import Profile from './pages/dashboard/Profile'
+import Settings from './pages/dashboard/Settings'
+import DashboardLayout from './layout/DashboardLayout'
+import ReactMemo from './pages/ReactMemo'
 
 function App() {
   return (
@@ -23,6 +33,18 @@ function App() {
         <Route path='/submit-form' element={<SubmitForm />}/>
         <Route path='/multiInput' element={<MultiInputForm />}/>
         <Route path='/register' element={<RegisterForm />}/>
+        <Route path='/users' element={<Users />}/>
+        <Route path='/nasa' element={<Nasa /> }/>
+        <Route path='/github' element={<Github />} />
+        <Route path='/character' element={<Character />} />
+        <Route path='/memo' element={<ReactMemo /> }/>
+        <Route path='/character/:id' element={<CharacterDetail />} />
+        <Route path='/dashboard' element={<DashboardLayout />}>
+          <Route path='overview' element={<Overview /> }/>
+          <Route path='profile' element={<Profile /> }/>
+          <Route path='settings' element={<Settings /> }/>
+        
+        </Route>
         <Route path='*' element={<NotFound />}/>
       </Routes>
       <Footer />

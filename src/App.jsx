@@ -12,6 +12,13 @@ import SubmitForm from './pages/SubmitForm'
 import RegisterForm from './pages/RegisterForm'
 import Users from './pages/Users'
 import Nasa from './pages/Nasa'
+import Character from './pages/Character'
+import CharacterDetail from './pages/CharacterDetail'
+import DashboardLayout from './layouts/DashboardLayout'
+import Overview from './pages/dashboard/Overview'
+import Profile from './pages/dashboard/Profile'
+import Settings from './pages/dashboard/Settings'
+import TaskList from './pages/TaskList'
 
 function App() {
   return (
@@ -26,6 +33,14 @@ function App() {
         <Route path='/multiInput' element={<MultiInputForm />}/>
         <Route path='/users' element={<Users />}/>
         <Route path='/nasa' element={<Nasa />}/>
+        <Route path='/tasks' element={<TaskList />}/>
+        <Route path='/characters' element={<Character />}/>
+        <Route path='/character/:id' element={<CharacterDetail />}/>
+        <Route path='/dashboard' element={<DashboardLayout /> }>
+          <Route path='overview' element={<Overview />}/>
+          <Route path='profile' element={<Profile />}/>
+          <Route path='settings' element={<Settings />}/>
+        </Route>
         <Route path='/register' element={<RegisterForm />}/>
         <Route path='*' element={<NotFound />}/>
 

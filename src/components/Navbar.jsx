@@ -63,6 +63,31 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="py-2 md:py-0">
+            <Link to="/tasks" onClick={() => setIsOpen(false)}>
+              Tasks
+            </Link>
+          </li>
+          <li className="py-2 md:py-0">
+            <Link to="/characters" onClick={() => setIsOpen(false)}>
+              Characters
+            </Link>
+          </li>
+          <li className="py-2 md:py-0">
+            <Link to="/dashboard/overview" onClick={() => setIsOpen(false)}>
+              OverView
+            </Link>
+          </li>
+          <li className="py-2 md:py-0">
+            <Link to="/dashboard/profile" onClick={() => setIsOpen(false)}>
+              Profile
+            </Link>
+          </li>
+          <li className="py-2 md:py-0">
+            <Link to="/dashboard/settings" onClick={() => setIsOpen(false)}>
+              Settings
+            </Link>
+          </li>
+          <li className="py-2 md:py-0">
             <Link to="/contact" onClick={() => setIsOpen(false)}>
               Contact
             </Link>

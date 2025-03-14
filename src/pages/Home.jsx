@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import { GoMoon } from "react-icons/go";
 import { IoIosSunny } from "react-icons/io";
+import UserProfile from './UserProfile';
+import LoginButton from './LoginButton';
+
 
 
 function Home() {
@@ -20,6 +23,9 @@ function Home() {
   }
   return (
     <div className='h-screen' style={containerStyle}>
+      <LoginButton />
+      <UserProfile />
+      
         <h2>
           { isDarkMode ? (
             <>
